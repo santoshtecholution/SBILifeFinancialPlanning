@@ -1,0 +1,13 @@
+server:
+  port: 8762
+
+turbine:
+  cluster-name-expression: new String("default")
+  app-config: GATEWAY
+  combine-host-port: false
+
+eureka:
+  client: 
+    registerWithEureka: false
+    fetchRegistry: true
+  
