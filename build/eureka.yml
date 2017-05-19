@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  eureka:
+    build: ../Eureka
+    ports: 
+      - "8761:8761"
+    expose:
+      - "8761"

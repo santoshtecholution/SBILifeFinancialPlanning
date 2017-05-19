@@ -77,6 +77,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<!-- For docker imaging -->
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-magen-plugin</artifactId>
+				<version>0.4.13</version>
+				<configuration>
+					<skipDockerBuild>false</skipDockerBuild>
+					<skipDockerPush>false</skipDockerPush>
+				</configuration>
+			</plugin>
+			
 		</plugins>
 	</build>
 

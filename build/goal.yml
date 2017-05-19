@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+  goalservice: 
+    build: ../GoalService
+    ports: 
+      - "8084:8084"
+    expose:
+      - "8084"
+  #  links: 
+  #    - eureka:eureka 
+  #  depends_on: 
+  #    - eureka
+  #eureka: 
+  #  build: ../eureka 

@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+  investmentservice: 
+    build: ../InvestmentService
+    ports: 
+      - "8083:8083"
+    expose:
+      - "8083"
+  #  links: 
+  #    - eureka:eureka 
+  #  depends_on: 
+  #    - eureka
+  #eureka: 
+  #  build: ../eureka 

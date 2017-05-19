@@ -1,0 +1,9 @@
+version: "2.0"
+
+services:
+  circuitbreaker: 
+    build: ../CircuitBreakerWithTurbine
+    ports: 
+      - "8762:8762"
+    expose: 
+      - "8762"

@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+  peerdataservice: 
+    build: ../PeerDataService
+    ports: 
+      - "8082:8082"
+    expose:
+      - "8082"
+  #  links: 
+  #    - eureka:eureka 
+  #  depends_on: 
+  #    - eureka
+  #eureka: 
+  #  build: ../eureka 
